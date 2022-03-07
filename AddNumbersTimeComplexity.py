@@ -6,7 +6,7 @@ def Recursion(n):
         return n
     return n + Recursion(n-1)
 
-print(Recursion(998))
+print(f"Recursion: {Recursion(998)}")
 
 #Iteration-----------------
 
@@ -24,7 +24,7 @@ def Iteration(n):
     return nextnum
 
 start = time.time()
-print(Iteration(5000000))
+print(f"\nIteration: {Iteration(5000000)}")
 end = time.time()
 
 print(end - start)
@@ -35,7 +35,7 @@ def Formula(n):
     return int((n *(n+1))/2)
 
 start = time.time()
-print(Formula(5000000))
+print(f"\nFormula: {Formula(5000000)}")
 end = time.time()
 
 print(end - start)
